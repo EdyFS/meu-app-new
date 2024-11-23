@@ -1,9 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 function Relogio() {
-    return (
-      <>
-        <h3>Meu Relógio</h3>
+    
         
         function RelogioAtualizado() {
   const [horaAtual, setHoraAtual] = useState('');
@@ -22,15 +20,12 @@ function Relogio() {
     return () => clearTimeout(timer); 
   }, [horaAtual]); 
 
-  return (
-    <div style={styles.relogioContainer}>
-      <h1>Relógio Atualizado</h1>
-      <p style={styles.hora}>{horaAtual}</p>
-    </div>
-  );
 }
       
-    
+return (
+  <>
+    <h3>Meu Relógio</h3>
+    <p>{horaAtual}</p>
       </>
      
     );

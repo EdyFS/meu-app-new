@@ -1,28 +1,26 @@
 import React, { useState, useEffect } from 'react';
 
 function Letreiro() {
-    return (
-      <>
-        <h3>Meu Letreiro</h3>
+    
 
-        function Letreiro({ mensagem }) {
-            
+        function Letreiro() {
+            const mensagem = "Conheça a Fatec";
             const [texto, setTexto] = useState('');
             const [indice, setIndice] = useState(0);
-            const mensagem = "Conheça a Fatec";
+            
 
             useEffect(() => {
                 const intervalo = setInterval(() => {
                   setTexto((prevTexto) => {
-                    if (prevTexto.length === texto.length) {
+                    if (prevTexto.length === mensagem.length) {
                       return ''; 
                     }
-                    return texto.slice(0, prevTexto.length + 1); 
+                    return mensagem.slice(0, prevTexto.length + 1); 
                   });
             
                   setIndice((prevIndice) => {
                     
-                    if (prevIndice === texto.length) {
+                    if (prevIndice === mensagem.length) {
                       return 0; 
                     }
                     return prevIndice + 1;
@@ -30,15 +28,14 @@ function Letreiro() {
                 }, 150); 
             
                 return () => clearInterval(intervalo); 
-              }, [texto]);
+              }, [mensagem]);
 
-              return (
-                <div style={styles.container}>
-                  <h1 style={styles.letreiro}>{texto}</h1>
-                </div>
-              );
+              
             }
-
+            return (
+              <>
+                <h3>Meu Letreiro</h3>
+                <p>{mensagem}</p>
       </>
      
     );
