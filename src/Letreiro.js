@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function Letreiro() {
     
 
-        function Letreiro() {
+        
             const mensagem = "Conheça a Fatec";
             const [texto, setTexto] = useState('');
             const [indice, setIndice] = useState(0);
@@ -31,11 +31,11 @@ function Letreiro() {
               }, [mensagem]);
 
               
-            }
+            
             return (
               <>
                 <h3>Meu Letreiro</h3>
-                <p>{mensagem}</p>
+                <p>{texto}</p>
       </>
      
     );

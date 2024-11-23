@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 function Relogio() {
     
         
-        function RelogioAtualizado() {
+        
   const [horaAtual, setHoraAtual] = useState('');
 
   const relogioAtualizado = () => {
@@ -20,7 +20,7 @@ function Relogio() {
     return () => clearTimeout(timer); 
   }, [horaAtual]); 
 
-}
+
       
 return (
   <>
