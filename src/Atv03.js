@@ -2,6 +2,9 @@ import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 import Gallery from "./Gallery";
 import { Profile } from "./Gallery";
+import Avatar from "./Avatar";
+import TodoList from "./TodoList";
+import Perfil from "./Perfil";
 
 function Atv03(){
     return(
@@ -11,6 +14,12 @@ function Atv03(){
 <Gallery/>
 <h3>Profile</h3>
 <Profile/>
+<h3>Avatar</h3>
+<Avatar/>
+<h3>To do List</h3>
+<TodoList/>
+<h3>Profile</h3>
+<Perfil/>
 
 <Link to="/">Voltar</Link>
 </>
