@@ -8,10 +8,10 @@ function Atv02() {
     const [mulheres, setMulheres] = useState(0);
     const [total, setTotal] = useState(0);
     const imghomem = {
-      imageUrl :'https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flaticon.com%2Fbr%2Ficone-gratis%2Fhomem_3439472&psig=AOvVaw2Dpfxc5Fi3iP6Aa9yLGsMu&ust=1732487161323000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJDXkbbG84kDFQAAAAAdAAAAABAE',
+      imageUrl :'https://cdn-icons-png.flaticon.com/512/3439/3439472.png',
     }
     const imgmulher = {
-      imageUrl :'https://www.google.com/imgres?q=mulher%20icone&imgurl=https%3A%2F%2Fcdn-icons-png.flaticon.com%2F512%2F103%2F103277.png&imgrefurl=https%3A%2F%2Fwww.flaticon.com%2Fbr%2Ficone-gratis%2Fmulher_103277&docid=hAjay27vzL79kM&tbnid=VPVVaaPMrCcPdM&vet=12ahUKEwjG9Kb0v_OJAxX4gWEGHRjkOigQM3oECBcQAA..i&w=512&h=512&hcb=2&ved=2ahUKEwjG9Kb0v_OJAxX4gWEGHRjkOigQM3oECBcQAA',
+      imageUrl :'https://cdn-icons-png.flaticon.com/512/103/103277.png',
     }
 
     function addHomem(){
