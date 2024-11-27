@@ -6,6 +6,7 @@ import Avatar from "./Avatar";
 import TodoList from "./TodoList";
 import Perfil from "./Perfil";
 import PackingList from "./PackingList";
+import List from "./List";
 
 function Atv03(){
     return(
@@ -23,6 +24,8 @@ function Atv03(){
 <Perfil/>
 <h3>PackingList</h3>
 <PackingList/>
+<h3>List</h3>
+<List/>
 
 <Link to="/">Voltar</Link>
 </>
